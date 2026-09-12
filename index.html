@@ -146,16 +146,21 @@
                         <p><strong>Open for new projects and B2B contracts.</strong> Whether you are looking for strategic advice on adopting AI or need hands-on development for a specific automation or computer vision task, I am ready to help your business grow efficiently.</p>
                         <div class="row">
                             <div class="col-8 col-12-small">
-                                <form method="post" action="#">
+                                <p id="contact-thanks" style="display:none; margin-bottom:1em;"><strong>Thank you — your message has been sent!</strong> I'll get back to you as soon as possible.</p>
+                                <form id="contact-form" method="post" action="https://formsubmit.co/avolventa@gmail.com">
+                                    <input type="hidden" name="_subject" value="New message from tva.services contact form">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="https://tva.services/index.html?sent=true#three">
+                                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                                     <div class="row gtr-uniform gtr-50">
-                                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
+                                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+                                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
                                     </div>
                                     <!-- Important for EU forms: Checkbox for privacy policy -->
                                     <div class="col-12" style="margin-top: 1em;">
                                         <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
-                                        <label for="privacy-consent" style="font-size: 0.9em;">I have read and accept the <a href="#">Privacy Policy</a>.</label>
+                                        <label for="privacy-consent" style="font-size: 0.9em;">I have read and accept the <a href="privacy-policy.html">Privacy Policy</a>.</label>
                                     </div>
                                     <div class="col-12" style="margin-top: 1em;">
                                         <ul class="actions">
@@ -218,6 +223,17 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
+
+        <!-- Contact form: show thank-you message after FormSubmit redirect -->
+            <script>
+                (function () {
+                    if (window.location.search.indexOf('sent=true') === -1) return;
+                    var form = document.getElementById('contact-form');
+                    var thanks = document.getElementById('contact-thanks');
+                    if (form) form.style.display = 'none';
+                    if (thanks) thanks.style.display = 'block';
+                })();
+            </script>
 
         <!-- Cookie consent logic -->
             <script>
