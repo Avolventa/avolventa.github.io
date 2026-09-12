@@ -1,0 +1,23 @@
+<svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chat bubble connected to a gear, representing LLM and automation integration">
+    <rect width="640" height="480" fill="#211a17"/>
+    <rect x="140" y="110" width="280" height="170" rx="20" fill="none" stroke="#49bf9d" stroke-width="4"/>
+    <polygon points="200,280 230,280 200,330" fill="#211a17" stroke="#49bf9d" stroke-width="4"/>
+    <line x1="170" y1="150" x2="360" y2="150" stroke="#787878" stroke-width="6" stroke-linecap="round"/>
+    <line x1="170" y1="180" x2="330" y2="180" stroke="#787878" stroke-width="6" stroke-linecap="round"/>
+    <line x1="170" y1="210" x2="300" y2="210" stroke="#787878" stroke-width="6" stroke-linecap="round"/>
+    <line x1="420" y1="250" x2="460" y2="300" stroke="#787878" stroke-width="3" stroke-dasharray="6 6"/>
+    <g transform="translate(460,320)">
+        <circle r="34" fill="none" stroke="#49bf9d" stroke-width="6"/>
+        <circle r="10" fill="#49bf9d"/>
+        <g stroke="#49bf9d" stroke-width="6">
+            <line x1="0" y1="-44" x2="0" y2="-58"/>
+            <line x1="0" y1="44" x2="0" y2="58"/>
+            <line x1="-44" y1="0" x2="-58" y2="0"/>
+            <line x1="44" y1="0" x2="58" y2="0"/>
+            <line x1="-31" y1="-31" x2="-41" y2="-41"/>
+            <line x1="31" y1="31" x2="41" y2="41"/>
+            <line x1="-31" y1="31" x2="-41" y2="41"/>
+            <line x1="31" y1="-31" x2="41" y2="-41"/>
+        </g>
+    </g>
+</svg>
