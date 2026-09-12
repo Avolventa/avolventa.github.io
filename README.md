@@ -116,11 +116,11 @@
                                     </li>
                                     <li>
                                         <h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-                                        <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">LinkedIn Profile</a>
+                                        <a href="https://www.linkedin.com/in/avolventa/" target="_blank">LinkedIn Profile</a>
                                     </li>
                                     <li>
                                         <h3 class="icon brands fa-gitlab"><span class="label">GitLab</span></h3>
-                                        <a href="https://gitlab.com/YOUR_PROFILE" target="_blank">GitLab Profile</a>
+                                        <a href="https://gitlab.com/avolventa" target="_blank">GitLab Profile</a>
                                     </li>
                                 </ul>
                             </div>
@@ -133,8 +133,8 @@
             <footer id="footer">
                 <div class="inner">
                     <ul class="icons">
-                        <li><a href="https://linkedin.com/in/YOUR_PROFILE" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://gitlab.com/YOUR_PROFILE" class="icon brands fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/avolventa/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://gitlab.com/avolventa" class="icon brands fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
                         <li><a href="mailto:avolventa@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                     </ul>
                     <ul class="copyright">
