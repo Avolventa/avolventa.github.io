@@ -8,6 +8,17 @@ Live at: [https://tva.services](https://tva.services)
 
 A static one-page site presenting AI/LLM consulting and computer vision services, with a contact form and the legal pages required for an EU/Spain-facing business site (Legal Notice, Privacy Policy, Cookies Policy).
 
+## Languages
+
+The site is available in four languages, linked by the switcher in the upper-left corner of every page:
+
+- `/` — Spanish (default)
+- `/ca/` — Catalan
+- `/en/` — English
+- `/ru/` — Russian
+
+Each language folder contains its own `index.html`, `legal-notice.html`, `privacy-policy.html` and `cookies-policy.html`. The Spanish legal pages in the site root are the reference versions; the translated ones state that the Spanish text prevails in case of discrepancy.
+
 ## Stack
 
 - Plain HTML/CSS/JS, no build step

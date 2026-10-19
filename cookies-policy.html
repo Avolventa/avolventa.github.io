@@ -1,9 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
     <head>
-        <title>Cookies Policy | Tatiana Vasilchenko</title>
+        <title>Política de cookies | Tatiana Vasilchenko</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="alternate" hreflang="es" href="https://tva.services/cookies-policy.html" />
+        <link rel="alternate" hreflang="ca" href="https://tva.services/ca/cookies-policy.html" />
+        <link rel="alternate" hreflang="en" href="https://tva.services/en/cookies-policy.html" />
+        <link rel="alternate" hreflang="ru" href="https://tva.services/ru/cookies-policy.html" />
+        <link rel="alternate" hreflang="x-default" href="https://tva.services/cookies-policy.html" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
             .legal-links {
@@ -79,23 +84,70 @@
             #cookie-consent-banner[hidden] {
                 display: none;
             }
+
+            /* Language switcher (upper left) */
+            #lang-switcher {
+                position: fixed;
+                top: 1em;
+                left: 1.5em;
+                z-index: 10001;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-size: 0.8em;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                line-height: 1;
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+            }
+            #lang-switcher li {
+                display: inline-block;
+                padding: 0;
+                margin: 0 0.35em 0 0;
+            }
+            #lang-switcher a {
+                color: rgba(255, 255, 255, 0.6);
+                border-bottom: none;
+                text-decoration: none;
+            }
+            #lang-switcher a:hover,
+            #lang-switcher a.active {
+                color: #ffffff;
+            }
+            #lang-switcher a.active {
+                border-bottom: 1px solid #ffffff;
+            }
+            /* Below 980px the header is no longer a fixed sidebar, so keep the switcher at the top of the page */
+            @media screen and (max-width: 980px) {
+                #lang-switcher {
+                    position: absolute;
+                }
+            }
         </style>
     </head>
     <body class="is-preload">
 
         <!-- Cookie consent banner (EU/GDPR) -->
-            <div id="cookie-consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
-                <p>This website uses cookies to ensure you get the best experience. By clicking "Accept", you consent to the use of cookies as described in our <a href="cookies-policy.html">Cookies Policy</a>.</p>
+            <div id="cookie-consent-banner" role="dialog" aria-live="polite" aria-label="Consentimiento de cookies" hidden>
+                <p>Este sitio web utiliza cookies para ofrecerte la mejor experiencia. Al hacer clic en «Aceptar», consientes el uso de cookies tal como se describe en nuestra <a href="cookies-policy.html">Política de cookies</a>.</p>
                 <div class="cookie-actions">
-                    <button id="cookie-decline-btn" type="button">Decline</button>
-                    <button id="cookie-accept-btn" type="button">Accept</button>
+                    <button id="cookie-decline-btn" type="button">Rechazar</button>
+                    <button id="cookie-accept-btn" type="button">Aceptar</button>
                 </div>
             </div>
+
+        <!-- Language switcher -->
+            <ul id="lang-switcher" aria-label="Language">
+                <li><a href="cookies-policy.html" hreflang="es" lang="es" class="active" aria-current="page">ESP</a></li>
+                <li><a href="ca/cookies-policy.html" hreflang="ca" lang="ca">CA</a></li>
+                <li><a href="en/cookies-policy.html" hreflang="en" lang="en">EN</a></li>
+                <li><a href="ru/cookies-policy.html" hreflang="ru" lang="ru">RU</a></li>
+            </ul>
 
         <!-- Header -->
             <header id="header">
                 <div class="inner">
-                    <h1><strong>Cookies Policy</strong><br />Política de Cookies</h1>
+                    <h1><strong>Política de cookies</strong></h1>
                 </div>
             </header>
 
@@ -103,28 +155,28 @@
             <div id="main">
                 <section id="one">
                     <div class="policy-content">
-                        <h3>1. What are cookies?</h3>
-                        <p>Cookies are small text files that websites can store on your device to remember information about your visit. Similar client-side technologies, such as your browser's local storage, can serve comparable purposes.</p>
+                        <h3>1. ¿Qué son las cookies?</h3>
+                        <p>Las cookies son pequeños archivos de texto que los sitios web pueden almacenar en tu dispositivo para recordar información sobre tu visita. Otras tecnologías similares del lado del cliente, como el almacenamiento local (local storage) de tu navegador, pueden cumplir funciones comparables.</p>
 
-                        <h3>2. Cookies used on this website</h3>
-                        <p>tva.services does not currently use tracking, analytics, or advertising cookies of any kind. The only mechanism in use is your browser's <strong>local storage</strong>, which remembers whether you accepted or declined the cookie notice, so it does not need to be shown to you on every visit. No personal data leaves your browser through this mechanism, and it is not shared with any third party.</p>
+                        <h3>2. Cookies utilizadas en este sitio web</h3>
+                        <p>Actualmente, tva.services no utiliza cookies de seguimiento, analíticas ni publicitarias de ningún tipo. El único mecanismo que se utiliza es el <strong>almacenamiento local</strong> de tu navegador, que recuerda si aceptaste o rechazaste el aviso de cookies para no tener que mostrártelo en cada visita. A través de este mecanismo ningún dato personal sale de tu navegador ni se comparte con terceros.</p>
 
-                        <h3>3. Third-party cookies</h3>
-                        <p>This website does not currently embed any third-party services (such as analytics or advertising networks) that would set their own cookies. If that changes in the future, this policy will be updated in advance and, where required, your consent will be requested before any new cookie is set.</p>
+                        <h3>3. Cookies de terceros</h3>
+                        <p>Actualmente, este sitio web no integra servicios de terceros (como herramientas de analítica o redes publicitarias) que instalen sus propias cookies. Si esto cambia en el futuro, esta política se actualizará con antelación y, cuando sea necesario, se te pedirá tu consentimiento antes de instalar cualquier cookie nueva.</p>
 
-                        <h3>4. How to control cookies</h3>
-                        <p>Most web browsers allow you to control cookies through their settings, including blocking or deleting them. Refer to your browser's help section for instructions. You can also update your choice for this website at any time using the button below.</p>
+                        <h3>4. Cómo controlar las cookies</h3>
+                        <p>La mayoría de los navegadores web te permiten controlar las cookies desde su configuración, incluido bloquearlas o eliminarlas. Consulta la sección de ayuda de tu navegador para obtener instrucciones. También puedes cambiar tu elección para este sitio web en cualquier momento con el botón de abajo.</p>
                         <p>
-                            <button id="cookie-change-pref-btn" type="button" class="button">Manage my cookie preference</button>
+                            <button id="cookie-change-pref-btn" type="button" class="button">Gestionar mis preferencias de cookies</button>
                         </p>
 
-                        <h3>5. More information</h3>
-                        <p>For questions about this policy, contact <a href="mailto:avolventa@gmail.com">avolventa@gmail.com</a>. You can also find general information about cookies and your rights at the Spanish Data Protection Agency: <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.</p>
+                        <h3>5. Más información</h3>
+                        <p>Si tienes preguntas sobre esta política, escribe a <a href="mailto:avolventa@gmail.com">avolventa@gmail.com</a>. También puedes encontrar información general sobre las cookies y tus derechos en la Agencia Española de Protección de Datos: <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.</p>
 
-                        <p>See also our <a href="privacy-policy.html">Privacy Policy</a> and <a href="legal-notice.html">Legal Notice</a>.</p>
+                        <p>Consulta también nuestra <a href="privacy-policy.html">Política de privacidad</a> y nuestro <a href="legal-notice.html">Aviso legal</a>.</p>
 
                         <ul class="actions">
-                            <li><a href="index.html" class="button">Back to Home</a></li>
+                            <li><a href="index.html" class="button">Volver al inicio</a></li>
                         </ul>
                     </div>
                 </section>
@@ -139,13 +191,13 @@
                         <li><a href="mailto:avolventa@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                     </ul>
                     <ul class="copyright">
-                        <li>&copy; Tatiana Vasilchenko. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; Tatiana Vasilchenko. Todos los derechos reservados.</li><li>Diseño: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
 
                     <ul class="legal-links">
-                        <li><a href="legal-notice.html">Legal Notice (Aviso Legal)</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="cookies-policy.html">Cookies Policy</a></li>
+                        <li><a href="legal-notice.html">Aviso legal</a></li>
+                        <li><a href="privacy-policy.html">Política de privacidad</a></li>
+                        <li><a href="cookies-policy.html">Política de cookies</a></li>
                     </ul>
                 </div>
             </footer>
