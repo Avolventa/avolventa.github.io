@@ -80,6 +80,53 @@
                 display: none;
             }
 
+            /* Portfolio */
+            .portfolio-item .image.thumb img {
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+            }
+            /* Show images at full brightness; keep the template's overlay for the hover state only */
+            .portfolio-item .image.thumb:before {
+                opacity: 0;
+            }
+            .portfolio-item .image.thumb:hover:before {
+                opacity: 1;
+            }
+            .portfolio-item .gallery-badge {
+                position: absolute;
+                right: 0.75em;
+                bottom: 0.75em;
+                z-index: 2;
+                padding: 0 0.7em;
+                border-radius: 1em;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-size: 0.7em;
+                line-height: 1.9;
+                pointer-events: none;
+            }
+            .portfolio-item .gallery-badge .icon {
+                margin-right: 0.3em;
+            }
+            .portfolio-item .gallery-extra {
+                display: none;
+            }
+            .portfolio-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4em;
+                list-style: none;
+                margin: 0.8em 0 0 0;
+                padding: 0;
+            }
+            .portfolio-tags li {
+                padding: 0 0.7em;
+                border: 1px solid #d5d5d5;
+                border-radius: 1em;
+                color: #7f888f;
+                font-size: 0.7em;
+                line-height: 1.9;
+            }
+
             /* Language switcher (upper left) */
             #lang-switcher {
                 position: fixed;
@@ -187,6 +234,37 @@
                                 <h3>Soluciones de Visión por Computador</h3>
                                 <p>Entrenamiento y despliegue de ciclo completo de modelos de Visión por Computador para fabricación, control de calidad, detección de objetos y extracción de datos visuales.<br />
                                 <strong>Proyectos llave en mano: 100 € – 2.000 €</strong></p>
+                            </article>
+                        </div>
+                    </section>
+
+                <!-- Portfolio -->
+                    <section id="portfolio">
+                        <h2>Portafolio</h2>
+                        <p>Una selección de proyectos de mi máster en Ingeniería de Inteligencia Artificial y Ciberseguridad en la URV: desde un despliegue en una línea de producción hasta sistemas multiagente con LLM. Haz clic en una imagen para ver más.</p>
+                        <div class="row">
+                            <article class="col-12 work-item portfolio-item">
+                                <a href="images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Resultado del modelo en soldaduras reales: contorno detectado (verde) y mapas de calor de segmentación"><img src="images/portfolio/thesis-thumb.jpg" alt="Soldaduras reales con el contorno detectado en verde" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
+                                <a href="images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Entrada: imagen de la cámara de la línea de producción de IPTE" tabindex="-1" aria-hidden="true"></a>
+                                <a href="images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Pipeline de inferencia: localización de la soldadura → recorte → segmentación" tabindex="-1" aria-hidden="true"></a>
+                                <a href="images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Entrenamiento con validación humana: un experto corrige las predicciones para adaptar el modelo a nuevas soldaduras" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Verificación automática de soldaduras en una línea de producción (Trabajo Fin de Máster)</h3>
+                                <p>Pipeline de deep learning en dos etapas desarrollado con IPTE Spain (Reus): un detector RT-DETR localiza cada soldadura y una U-Net la segmenta píxel a píxel, generando un mapa de calor fácil de interpretar para el operario. Alcanza un coeficiente Dice de 0,92 en tiempo real y, gracias a un flujo con validación humana (human-in-the-loop), se adapta a un nuevo tipo de soldadura con unas 50 imágenes etiquetadas.</p>
+                                <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="images/portfolio/thermal-1.jpg" class="image fit thumb" data-caption="Piezas completas detectadas (verde): 3 piezas contadas"><img src="images/portfolio/thermal-1.jpg" alt="Imagen térmica con las piezas completas marcadas en verde" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="images/portfolio/thermal-2.jpg" class="gallery-extra" data-caption="Preprocesado: el aplanado del fondo resalta los bordes de las piezas" tabindex="-1" aria-hidden="true"></a>
+                                <a href="images/portfolio/thermal-3.jpg" class="gallery-extra" data-caption="Las piezas parcialmente visibles se excluyen automáticamente: 2 piezas contadas" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Recuento de piezas en imágenes térmicas</h3>
+                                <p>Sistema de visión por computador clásica que cuenta las piezas completas de una línea de termosellado a partir de imágenes de una cámara termográfica. El aplanado del fondo, la detección de líneas y círculos mediante la transformada de Hough y el filtrado por bordes conservan solo las piezas totalmente visibles; los parámetros se ajustaron automáticamente y el recuento fue correcto en las 7 imágenes de muestra.</p>
+                                <ul class="portfolio-tags"><li>OpenCV</li><li>Transformada de Hough</li><li>Termografía</li><li>Python</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="images/portfolio/crewai-es.svg" class="image fit thumb" data-caption="Flujo de agentes: investigación → revisión humana → redacción → edición"><img src="images/portfolio/crewai-es.svg" alt="Diagrama de los agentes investigador, redactor y editor" loading="lazy" /></a>
+                                <h3>Redacción de artículos con agentes de CrewAI</h3>
+                                <p>Un equipo de tres agentes LLM (investigador, redactor y editor) convierte un tema en un artículo listo para publicar. El investigador prepara un esquema que aprueba una persona, el redactor escribe un borrador de más de 800 palabras y el editor revisa la claridad, la precisión y la gramática. La memoria compartida funciona con embeddings locales de Ollama.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>Agentes LLM</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
                             </article>
                         </div>
                     </section>

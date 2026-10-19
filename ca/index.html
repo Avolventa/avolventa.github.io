@@ -80,6 +80,53 @@
                 display: none;
             }
 
+            /* Portfolio */
+            .portfolio-item .image.thumb img {
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+            }
+            /* Show images at full brightness; keep the template's overlay for the hover state only */
+            .portfolio-item .image.thumb:before {
+                opacity: 0;
+            }
+            .portfolio-item .image.thumb:hover:before {
+                opacity: 1;
+            }
+            .portfolio-item .gallery-badge {
+                position: absolute;
+                right: 0.75em;
+                bottom: 0.75em;
+                z-index: 2;
+                padding: 0 0.7em;
+                border-radius: 1em;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-size: 0.7em;
+                line-height: 1.9;
+                pointer-events: none;
+            }
+            .portfolio-item .gallery-badge .icon {
+                margin-right: 0.3em;
+            }
+            .portfolio-item .gallery-extra {
+                display: none;
+            }
+            .portfolio-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4em;
+                list-style: none;
+                margin: 0.8em 0 0 0;
+                padding: 0;
+            }
+            .portfolio-tags li {
+                padding: 0 0.7em;
+                border: 1px solid #d5d5d5;
+                border-radius: 1em;
+                color: #7f888f;
+                font-size: 0.7em;
+                line-height: 1.9;
+            }
+
             /* Language switcher (upper left) */
             #lang-switcher {
                 position: fixed;
@@ -187,6 +234,37 @@
                                 <h3>Solucions de Visió per Computador</h3>
                                 <p>Entrenament i desplegament de cicle complet de models de Visió per Computador per a fabricació, control de qualitat, detecció d'objectes i extracció de dades visuals.<br />
                                 <strong>Projectes clau en mà: 100 € – 2.000 €</strong></p>
+                            </article>
+                        </div>
+                    </section>
+
+                <!-- Portfolio -->
+                    <section id="portfolio">
+                        <h2>Portafoli</h2>
+                        <p>Una selecció de projectes del meu màster en Enginyeria d&#x27;Intel·ligència Artificial i Ciberseguretat a la URV: des d&#x27;un desplegament en una línia de producció fins a sistemes multiagent amb LLM. Fes clic en una imatge per veure&#x27;n més.</p>
+                        <div class="row">
+                            <article class="col-12 work-item portfolio-item">
+                                <a href="../images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Resultat del model en soldadures reals: contorn detectat (verd) i mapes de calor de segmentació"><img src="../images/portfolio/thesis-thumb.jpg" alt="Soldadures reals amb el contorn detectat en verd" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
+                                <a href="../images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Entrada: imatge de la càmera de la línia de producció d&#x27;IPTE" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Pipeline d&#x27;inferència: localització de la soldadura → retall → segmentació" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Entrenament amb validació humana: un expert corregeix les prediccions per adaptar el model a noves soldadures" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Verificació automàtica de soldadures en una línia de producció (Treball de Fi de Màster)</h3>
+                                <p>Pipeline de deep learning en dues etapes desenvolupat amb IPTE Spain (Reus): un detector RT-DETR localitza cada soldadura i una U-Net la segmenta píxel a píxel, i genera un mapa de calor fàcil d&#x27;interpretar per a l&#x27;operari. Assoleix un coeficient Dice de 0,92 en temps real i, gràcies a un flux amb validació humana (human-in-the-loop), s&#x27;adapta a un nou tipus de soldadura amb unes 50 imatges etiquetades.</p>
+                                <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/thermal-1.jpg" class="image fit thumb" data-caption="Peces completes detectades (verd): 3 peces comptades"><img src="../images/portfolio/thermal-1.jpg" alt="Imatge tèrmica amb les peces completes marcades en verd" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="../images/portfolio/thermal-2.jpg" class="gallery-extra" data-caption="Preprocessament: l&#x27;aplanament del fons ressalta les vores de les peces" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thermal-3.jpg" class="gallery-extra" data-caption="Les peces parcialment visibles s&#x27;exclouen automàticament: 2 peces comptades" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Recompte de peces en imatges tèrmiques</h3>
+                                <p>Sistema de visió per computador clàssica que compta les peces completes d&#x27;una línia de termosegellat a partir d&#x27;imatges d&#x27;una càmera termogràfica. L&#x27;aplanament del fons, la detecció de línies i cercles amb la transformada de Hough i el filtratge per vores conserven només les peces totalment visibles; els paràmetres es van ajustar automàticament i el recompte va ser correcte en les 7 imatges de mostra.</p>
+                                <ul class="portfolio-tags"><li>OpenCV</li><li>Transformada de Hough</li><li>Termografia</li><li>Python</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/crewai-ca.svg" class="image fit thumb" data-caption="Flux d&#x27;agents: recerca → revisió humana → redacció → edició"><img src="../images/portfolio/crewai-ca.svg" alt="Diagrama dels agents investigador, redactor i editor" loading="lazy" /></a>
+                                <h3>Redacció d&#x27;articles amb agents de CrewAI</h3>
+                                <p>Un equip de tres agents LLM (investigador, redactor i editor) converteix un tema en un article a punt per publicar. L&#x27;investigador prepara un esquema que aprova una persona, el redactor escriu un esborrany de més de 800 paraules i l&#x27;editor en revisa la claredat, la precisió i la gramàtica. La memòria compartida funciona amb embeddings locals d&#x27;Ollama.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>Agents LLM</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
                             </article>
                         </div>
                     </section>

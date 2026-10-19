@@ -80,6 +80,53 @@
                 display: none;
             }
 
+            /* Portfolio */
+            .portfolio-item .image.thumb img {
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+            }
+            /* Show images at full brightness; keep the template's overlay for the hover state only */
+            .portfolio-item .image.thumb:before {
+                opacity: 0;
+            }
+            .portfolio-item .image.thumb:hover:before {
+                opacity: 1;
+            }
+            .portfolio-item .gallery-badge {
+                position: absolute;
+                right: 0.75em;
+                bottom: 0.75em;
+                z-index: 2;
+                padding: 0 0.7em;
+                border-radius: 1em;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-size: 0.7em;
+                line-height: 1.9;
+                pointer-events: none;
+            }
+            .portfolio-item .gallery-badge .icon {
+                margin-right: 0.3em;
+            }
+            .portfolio-item .gallery-extra {
+                display: none;
+            }
+            .portfolio-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4em;
+                list-style: none;
+                margin: 0.8em 0 0 0;
+                padding: 0;
+            }
+            .portfolio-tags li {
+                padding: 0 0.7em;
+                border: 1px solid #d5d5d5;
+                border-radius: 1em;
+                color: #7f888f;
+                font-size: 0.7em;
+                line-height: 1.9;
+            }
+
             /* Language switcher (upper left) */
             #lang-switcher {
                 position: fixed;
@@ -187,6 +234,37 @@
                                 <h3>Computer Vision Solutions</h3>
                                 <p>Full-cycle training and deployment of Computer Vision models for manufacturing, quality control, object detection, and visual data extraction.<br />
                                 <strong>Turnkey projects: 100 € – 2,000 €</strong></p>
+                            </article>
+                        </div>
+                    </section>
+
+                <!-- Portfolio -->
+                    <section id="portfolio">
+                        <h2>Portfolio</h2>
+                        <p>Selected projects from my Master&#x27;s in Artificial Intelligence and Cybersecurity Engineering at URV, from a production-line deployment to multi-agent LLM systems. Click an image to see more.</p>
+                        <div class="row">
+                            <article class="col-12 work-item portfolio-item">
+                                <a href="../images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Model output on real welds: detected weld outline (green) and segmentation heatmaps"><img src="../images/portfolio/thesis-thumb.jpg" alt="Real welds with the detected weld outline in green" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
+                                <a href="../images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Input: production camera image from the IPTE line" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Inference pipeline: weld localisation → crop → segmentation" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Human-in-the-loop training: an expert corrects predictions to adapt the model to new welds" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Automated Weld Verification on a Production Line (Master&#x27;s Thesis)</h3>
+                                <p>A two-stage deep learning pipeline built with IPTE Spain (Reus): an RT-DETR detector finds each weld, then a U-Net segments it pixel by pixel and produces a heatmap the operator can read. It reaches a Dice score of 0.92 in real time, and a human-in-the-loop workflow adapts it to a new weld type with about 50 labelled images.</p>
+                                <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/thermal-1.jpg" class="image fit thumb" data-caption="Detected complete parts (green): 3 parts counted"><img src="../images/portfolio/thermal-1.jpg" alt="Thermal image with complete parts circled in green" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="../images/portfolio/thermal-2.jpg" class="gallery-extra" data-caption="Pre-processing: background flattening highlights the part edges" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thermal-3.jpg" class="gallery-extra" data-caption="Partially visible parts are excluded automatically: 2 parts counted" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Counting Parts in Thermal Images</h3>
+                                <p>A classical computer vision system that counts complete parts on a heat-sealing line from thermographic camera images. Background flattening, Hough line and circle detection and edge filtering keep only fully visible parts; the parameters were tuned automatically and the count was correct on all 7 sample images.</p>
+                                <ul class="portfolio-tags"><li>OpenCV</li><li>Hough transform</li><li>Thermography</li><li>Python</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/crewai-en.svg" class="image fit thumb" data-caption="Agent workflow: research → human review → writing → editing"><img src="../images/portfolio/crewai-en.svg" alt="Diagram of the researcher, writer and editor agents" loading="lazy" /></a>
+                                <h3>Multi-Agent Article Writing with CrewAI</h3>
+                                <p>A team of three LLM agents (researcher, writer and editor) turns a topic into a publication-ready article. The researcher drafts an outline that a human approves, the writer produces a draft of 800+ words and the editor checks clarity, accuracy and grammar. Shared memory runs on local Ollama embeddings.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>LLM agents</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
                             </article>
                         </div>
                     </section>

@@ -80,6 +80,53 @@
                 display: none;
             }
 
+            /* Portfolio */
+            .portfolio-item .image.thumb img {
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+            }
+            /* Show images at full brightness; keep the template's overlay for the hover state only */
+            .portfolio-item .image.thumb:before {
+                opacity: 0;
+            }
+            .portfolio-item .image.thumb:hover:before {
+                opacity: 1;
+            }
+            .portfolio-item .gallery-badge {
+                position: absolute;
+                right: 0.75em;
+                bottom: 0.75em;
+                z-index: 2;
+                padding: 0 0.7em;
+                border-radius: 1em;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-size: 0.7em;
+                line-height: 1.9;
+                pointer-events: none;
+            }
+            .portfolio-item .gallery-badge .icon {
+                margin-right: 0.3em;
+            }
+            .portfolio-item .gallery-extra {
+                display: none;
+            }
+            .portfolio-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4em;
+                list-style: none;
+                margin: 0.8em 0 0 0;
+                padding: 0;
+            }
+            .portfolio-tags li {
+                padding: 0 0.7em;
+                border: 1px solid #d5d5d5;
+                border-radius: 1em;
+                color: #7f888f;
+                font-size: 0.7em;
+                line-height: 1.9;
+            }
+
             /* Language switcher (upper left) */
             #lang-switcher {
                 position: fixed;
@@ -187,6 +234,37 @@
                                 <h3>Решения в области компьютерного зрения</h3>
                                 <p>Полный цикл обучения и внедрения моделей компьютерного зрения для производства, контроля качества, обнаружения объектов и извлечения визуальных данных.<br />
                                 <strong>Проекты под ключ: 100 € – 2&nbsp;000 €</strong></p>
+                            </article>
+                        </div>
+                    </section>
+
+                <!-- Portfolio -->
+                    <section id="portfolio">
+                        <h2>Портфолио</h2>
+                        <p>Избранные проекты, выполненные во время магистратуры по инженерии искусственного интеллекта и кибербезопасности в URV, — от внедрения на производственной линии до мультиагентных систем на базе LLM. Нажмите на изображение, чтобы увидеть больше.</p>
+                        <div class="row">
+                            <article class="col-12 work-item portfolio-item">
+                                <a href="../images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Результат модели на реальных швах: найденный контур шва (зелёный) и тепловые карты сегментации"><img src="../images/portfolio/thesis-thumb.jpg" alt="Реальные сварные швы с найденным контуром, выделенным зелёным" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
+                                <a href="../images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Входные данные: снимок камеры с производственной линии IPTE" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Конвейер инференса: локализация шва → вырезка → сегментация" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Обучение с участием эксперта: специалист исправляет предсказания, чтобы адаптировать модель к новым швам" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Автоматическая проверка сварных швов на производственной линии (магистерская диссертация)</h3>
+                                <p>Двухэтапный конвейер глубокого обучения, разработанный совместно с IPTE Spain (Реус): детектор RT-DETR находит каждый сварной шов, а U-Net попиксельно сегментирует его и строит тепловую карту, понятную оператору. Модель достигает коэффициента Dice 0,92 в реальном времени, а процесс с участием эксперта (human-in-the-loop) позволяет адаптировать её к новому типу шва примерно на 50 размеченных изображениях.</p>
+                                <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/thermal-1.jpg" class="image fit thumb" data-caption="Найденные целые детали (зелёный): насчитано 3 детали"><img src="../images/portfolio/thermal-1.jpg" alt="Тепловизионный снимок, целые детали обведены зелёным" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="../images/portfolio/thermal-2.jpg" class="gallery-extra" data-caption="Предобработка: выравнивание фона выделяет края деталей" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/thermal-3.jpg" class="gallery-extra" data-caption="Частично видимые детали исключаются автоматически: насчитано 2 детали" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Подсчёт деталей на тепловизионных снимках</h3>
+                                <p>Система классического компьютерного зрения, которая подсчитывает целые детали на линии термозапайки по снимкам тепловизионной камеры. Выравнивание фона, поиск линий и окружностей преобразованием Хафа и фильтрация по краям оставляют только полностью видимые детали; параметры подобраны автоматически, и на всех 7 тестовых снимках подсчёт верен.</p>
+                                <ul class="portfolio-tags"><li>OpenCV</li><li>Преобразование Хафа</li><li>Термография</li><li>Python</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/crewai-ru.svg" class="image fit thumb" data-caption="Схема работы агентов: исследование → проверка человеком → написание → редактура"><img src="../images/portfolio/crewai-ru.svg" alt="Схема агентов: исследователь, автор и редактор" loading="lazy" /></a>
+                                <h3>Мультиагентное написание статей на CrewAI</h3>
+                                <p>Команда из трёх LLM-агентов (исследователь, автор и редактор) превращает тему в готовую к публикации статью. Исследователь составляет план, который утверждает человек, автор пишет черновик объёмом от 800 слов, а редактор проверяет ясность, точность и грамматику. Общая память работает на локальных эмбеддингах Ollama.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>LLM-агенты</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
                             </article>
                         </div>
                     </section>

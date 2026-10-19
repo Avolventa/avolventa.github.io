@@ -114,4 +114,25 @@
 
 			});
 
+	// Main Sections: Portfolio.
+
+		// Lightbox gallery (one per project, so navigation stays within that project).
+			$window.on('load', function() {
+
+				$('#portfolio .portfolio-item').poptrox({
+					caption: function($a) { return $a.data('caption'); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: 'a.image, a.gallery-extra',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+
+			});
+
 })(jQuery);
