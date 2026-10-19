@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tva.services/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/" />
+  </url>
+  <url>
+    <loc>https://tva.services/ca/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/" />
+  </url>
+  <url>
+    <loc>https://tva.services/en/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/" />
+  </url>
+  <url>
+    <loc>https://tva.services/ru/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/" />
+  </url>
+  <url>
+    <loc>https://tva.services/legal-notice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/legal-notice.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/ca/legal-notice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/legal-notice.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/en/legal-notice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/legal-notice.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/ru/legal-notice.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/legal-notice.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/legal-notice.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/privacy-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/ca/privacy-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/en/privacy-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/ru/privacy-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/cookies-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/cookies-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/ca/cookies-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/cookies-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/en/cookies-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/cookies-policy.html" />
+  </url>
+  <url>
+    <loc>https://tva.services/ru/cookies-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tva.services/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://tva.services/ca/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tva.services/en/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tva.services/ru/cookies-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tva.services/cookies-policy.html" />
+  </url>
+</urlset>

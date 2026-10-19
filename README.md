@@ -25,6 +25,8 @@ Each language folder contains its own `index.html`, `legal-notice.html`, `privac
 - Design based on [Strata](https://html5up.net/strata) by [HTML5 UP](https://html5up.net), used under the [CCA 3.0 license](https://html5up.net/license)
 - Hosted on GitHub Pages with a custom domain (see `CNAME`)
 - Contact form submissions are relayed by email via [FormSubmit](https://formsubmit.co)
+- Fonts (Source Sans Pro, Font Awesome) are self-hosted in `assets/webfonts/`, so pages load no third-party resources before consent
+- `sitemap.xml` lists every page with its language alternates; update `lastmod` there when content changes
 
 ## License
 
