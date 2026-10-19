@@ -241,15 +241,15 @@
                 <!-- Portfolio -->
                     <section id="portfolio">
                         <h2>Portafolio</h2>
-                        <p>Una selección de proyectos de mi máster en Ingeniería de Inteligencia Artificial y Ciberseguridad en la URV: desde un despliegue en una línea de producción hasta sistemas multiagente con LLM. Haz clic en una imagen para ver más.</p>
+                        <p>Una selección de proyectos que he desarrollado: desde un despliegue en una línea de producción hasta sistemas multiagente con LLM. Haz clic en una imagen para ver más.</p>
                         <div class="row">
                             <article class="col-12 work-item portfolio-item">
                                 <a href="images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Resultado del modelo en soldaduras reales: contorno detectado (verde) y mapas de calor de segmentación"><img src="images/portfolio/thesis-thumb.jpg" alt="Soldaduras reales con el contorno detectado en verde" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
                                 <a href="images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Entrada: imagen de la cámara de la línea de producción de IPTE" tabindex="-1" aria-hidden="true"></a>
                                 <a href="images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Pipeline de inferencia: localización de la soldadura → recorte → segmentación" tabindex="-1" aria-hidden="true"></a>
                                 <a href="images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Entrenamiento con validación humana: un experto corrige las predicciones para adaptar el modelo a nuevas soldaduras" tabindex="-1" aria-hidden="true"></a>
-                                <h3>Verificación automática de soldaduras en una línea de producción (Trabajo Fin de Máster)</h3>
-                                <p>Pipeline de deep learning en dos etapas desarrollado con IPTE Spain (Reus): un detector RT-DETR localiza cada soldadura y una U-Net la segmenta píxel a píxel, generando un mapa de calor fácil de interpretar para el operario. Alcanza un coeficiente Dice de 0,92 en tiempo real y, gracias a un flujo con validación humana (human-in-the-loop), se adapta a un nuevo tipo de soldadura con unas 50 imágenes etiquetadas.</p>
+                                <h3>Verificación automática de soldaduras en una línea de producción</h3>
+                                <p>Pipeline de deep learning en dos etapas desarrollado para IPTE Spain (Reus): un detector RT-DETR localiza cada soldadura y una U-Net la segmenta píxel a píxel, generando un mapa de calor fácil de interpretar para el operario. Alcanza un coeficiente Dice de 0,92 en tiempo real y, gracias a un flujo con validación humana (human-in-the-loop), se adapta a un nuevo tipo de soldadura con unas 50 imágenes etiquetadas.</p>
                                 <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
                             </article>
                             <article class="col-6 col-12-xsmall work-item portfolio-item">
@@ -265,6 +265,28 @@
                                 <h3>Redacción de artículos con agentes de CrewAI</h3>
                                 <p>Un equipo de tres agentes LLM (investigador, redactor y editor) convierte un tema en un artículo listo para publicar. El investigador prepara un esquema que aprueba una persona, el redactor escribe un borrador de más de 800 palabras y el editor revisa la claridad, la precisión y la gramática. La memoria compartida funciona con embeddings locales de Ollama.</p>
                                 <ul class="portfolio-tags"><li>CrewAI</li><li>Agentes LLM</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="images/portfolio/crack-1.jpg" class="image fit thumb" data-caption="Foto · grietas anotadas a mano · predicción del modelo (rojo)"><img src="images/portfolio/crack-thumb.jpg" alt="Grietas detectadas en rojo sobre hormigón" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="images/portfolio/crack-2.jpg" class="gallery-extra" data-caption="Foto · grietas anotadas a mano · predicción del modelo (rojo)" tabindex="-1" aria-hidden="true"></a>
+                                <a href="images/portfolio/crack-3.jpg" class="gallery-extra" data-caption="Foto · grietas anotadas a mano · predicción del modelo (rojo)" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Detección de grietas en superficies de hormigón</h3>
+                                <p>Modelo de deep learning que detecta grietas píxel a píxel en fotos de hormigón y asfalto, para la inspección automatizada de edificios e infraestructuras. Se basa en la arquitectura DeepCrack (una red VGG-16 con salidas laterales a varias escalas), entrenada en PyTorch con 300 imágenes anotadas; en 237 imágenes de prueba nuevas alcanza un F1 de 0,71, aunque las grietas miden solo unos pocos píxeles de ancho.</p>
+                                <ul class="portfolio-tags"><li>PyTorch</li><li>Segmentación semántica</li><li>VGG-16</li><li>Inspección de infraestructuras</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="images/portfolio/mars-terrain-es.jpg" class="image fit thumb" data-caption="Terreno de la misión: 100 ubicaciones por tipo de terreno, con los objetivos de la misión y la base"><img src="images/portfolio/mars-terrain-es.jpg" alt="Grafo del terreno de Marte coloreado por tipo de terreno" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="images/portfolio/mars-es.svg" class="gallery-extra" data-caption="Arquitectura del sistema: 6 equipos de agentes especializados" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Planificación de misiones con sistemas multiagente</h3>
+                                <p>Arquitectura de un sistema CrewAI que planifica una misión de exploración en Marte con rovers, drones y satélites. Seis equipos de agentes especializados se reparten el trabajo: uno prepara los datos de la misión, cuatro planifican las rutas de cada tipo de vehículo y otro lo integra todo en un único plan que respeta las restricciones de energía, tiempo y terreno. Diseñado en un equipo de cinco personas.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>Sistemas multiagente</li><li>Planificación</li><li>Análisis de grafos</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="images/portfolio/privacy-es.svg" class="image fit thumb" data-caption="Cómo funciona: el servidor solo maneja números cifrados"><img src="images/portfolio/privacy-es.svg" alt="Diagrama del cálculo sobre datos cifrados" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="images/portfolio/privacy-app.jpg" class="gallery-extra" data-caption="La aplicación web: subir los datos cifrados y lanzar el cálculo" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Estadísticas sobre datos cifrados</h3>
+                                <p>Aplicación web que permite a un servidor no fiable calcular estadísticas sobre datos sensibles sin descifrarlos nunca. Implementa en Python el homomorfismo de privacidad de Domingo-Ferrer (claves de 200 dígitos, cifrado probabilístico) y calcula medias, covarianza y una regresión sobre un conjunto de datos médicos cifrado; solo el propietario de los datos puede leer los resultados. Desarrollado en un equipo de tres personas.</p>
+                                <ul class="portfolio-tags"><li>Python</li><li>Cifrado homomórfico</li><li>Flask</li><li>Privacidad de datos</li></ul>
                             </article>
                         </div>
                     </section>

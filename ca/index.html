@@ -241,15 +241,15 @@
                 <!-- Portfolio -->
                     <section id="portfolio">
                         <h2>Portafoli</h2>
-                        <p>Una selecció de projectes del meu màster en Enginyeria d&#x27;Intel·ligència Artificial i Ciberseguretat a la URV: des d&#x27;un desplegament en una línia de producció fins a sistemes multiagent amb LLM. Fes clic en una imatge per veure&#x27;n més.</p>
+                        <p>Una selecció de projectes que he desenvolupat: des d&#x27;un desplegament en una línia de producció fins a sistemes multiagent amb LLM. Fes clic en una imatge per veure&#x27;n més.</p>
                         <div class="row">
                             <article class="col-12 work-item portfolio-item">
                                 <a href="../images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Resultat del model en soldadures reals: contorn detectat (verd) i mapes de calor de segmentació"><img src="../images/portfolio/thesis-thumb.jpg" alt="Soldadures reals amb el contorn detectat en verd" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
                                 <a href="../images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Entrada: imatge de la càmera de la línia de producció d&#x27;IPTE" tabindex="-1" aria-hidden="true"></a>
                                 <a href="../images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Pipeline d&#x27;inferència: localització de la soldadura → retall → segmentació" tabindex="-1" aria-hidden="true"></a>
                                 <a href="../images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Entrenament amb validació humana: un expert corregeix les prediccions per adaptar el model a noves soldadures" tabindex="-1" aria-hidden="true"></a>
-                                <h3>Verificació automàtica de soldadures en una línia de producció (Treball de Fi de Màster)</h3>
-                                <p>Pipeline de deep learning en dues etapes desenvolupat amb IPTE Spain (Reus): un detector RT-DETR localitza cada soldadura i una U-Net la segmenta píxel a píxel, i genera un mapa de calor fàcil d&#x27;interpretar per a l&#x27;operari. Assoleix un coeficient Dice de 0,92 en temps real i, gràcies a un flux amb validació humana (human-in-the-loop), s&#x27;adapta a un nou tipus de soldadura amb unes 50 imatges etiquetades.</p>
+                                <h3>Verificació automàtica de soldadures en una línia de producció</h3>
+                                <p>Pipeline de deep learning en dues etapes desenvolupat per a IPTE Spain (Reus): un detector RT-DETR localitza cada soldadura i una U-Net la segmenta píxel a píxel, i genera un mapa de calor fàcil d&#x27;interpretar per a l&#x27;operari. Assoleix un coeficient Dice de 0,92 en temps real i, gràcies a un flux amb validació humana (human-in-the-loop), s&#x27;adapta a un nou tipus de soldadura amb unes 50 imatges etiquetades.</p>
                                 <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
                             </article>
                             <article class="col-6 col-12-xsmall work-item portfolio-item">
@@ -265,6 +265,28 @@
                                 <h3>Redacció d&#x27;articles amb agents de CrewAI</h3>
                                 <p>Un equip de tres agents LLM (investigador, redactor i editor) converteix un tema en un article a punt per publicar. L&#x27;investigador prepara un esquema que aprova una persona, el redactor escriu un esborrany de més de 800 paraules i l&#x27;editor en revisa la claredat, la precisió i la gramàtica. La memòria compartida funciona amb embeddings locals d&#x27;Ollama.</p>
                                 <ul class="portfolio-tags"><li>CrewAI</li><li>Agents LLM</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/crack-1.jpg" class="image fit thumb" data-caption="Foto · esquerdes anotades a mà · predicció del model (vermell)"><img src="../images/portfolio/crack-thumb.jpg" alt="Esquerdes detectades en vermell sobre formigó" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="../images/portfolio/crack-2.jpg" class="gallery-extra" data-caption="Foto · esquerdes anotades a mà · predicció del model (vermell)" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/crack-3.jpg" class="gallery-extra" data-caption="Foto · esquerdes anotades a mà · predicció del model (vermell)" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Detecció d&#x27;esquerdes en superfícies de formigó</h3>
+                                <p>Model de deep learning que detecta esquerdes píxel a píxel en fotos de formigó i asfalt, per a la inspecció automatitzada d&#x27;edificis i infraestructures. Es basa en l&#x27;arquitectura DeepCrack (una xarxa VGG-16 amb sortides laterals a diverses escales), entrenada amb PyTorch amb 300 imatges anotades; en 237 imatges de prova noves assoleix un F1 de 0,71, tot i que les esquerdes només fan uns quants píxels d&#x27;amplada.</p>
+                                <ul class="portfolio-tags"><li>PyTorch</li><li>Segmentació semàntica</li><li>VGG-16</li><li>Inspecció d&#x27;infraestructures</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/mars-terrain-ca.jpg" class="image fit thumb" data-caption="Terreny de la missió: 100 ubicacions per tipus de terreny, amb els objectius de la missió i la base"><img src="../images/portfolio/mars-terrain-ca.jpg" alt="Graf del terreny de Mart acolorit per tipus de terreny" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="../images/portfolio/mars-ca.svg" class="gallery-extra" data-caption="Arquitectura del sistema: 6 equips d&#x27;agents especialitzats" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Planificació de missions amb sistemes multiagent</h3>
+                                <p>Arquitectura d&#x27;un sistema CrewAI que planifica una missió d&#x27;exploració a Mart amb rovers, drons i satèl·lits. Sis equips d&#x27;agents especialitzats es reparteixen la feina: un prepara les dades de la missió, quatre planifiquen les rutes de cada tipus de vehicle i un altre ho integra tot en un únic pla que respecta les restriccions d&#x27;energia, temps i terreny. Dissenyat en un equip de cinc persones.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>Sistemes multiagent</li><li>Planificació</li><li>Anàlisi de grafs</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/privacy-ca.svg" class="image fit thumb" data-caption="Com funciona: el servidor només treballa amb nombres xifrats"><img src="../images/portfolio/privacy-ca.svg" alt="Diagrama del càlcul sobre dades xifrades" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="../images/portfolio/privacy-app.jpg" class="gallery-extra" data-caption="L&#x27;aplicació web: pujar les dades xifrades i executar el càlcul" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Estadístiques sobre dades xifrades</h3>
+                                <p>Aplicació web que permet a un servidor no fiable calcular estadístiques sobre dades sensibles sense desxifrar-les mai. Implementa en Python l&#x27;homomorfisme de privadesa de Domingo-Ferrer (claus de 200 dígits, xifratge probabilístic) i calcula mitjanes, covariància i una regressió sobre un conjunt de dades mèdiques xifrat; només el propietari de les dades en pot llegir els resultats. Desenvolupat en un equip de tres persones.</p>
+                                <ul class="portfolio-tags"><li>Python</li><li>Xifratge homomòrfic</li><li>Flask</li><li>Privadesa de dades</li></ul>
                             </article>
                         </div>
                     </section>

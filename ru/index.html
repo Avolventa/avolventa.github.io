@@ -241,15 +241,15 @@
                 <!-- Portfolio -->
                     <section id="portfolio">
                         <h2>Портфолио</h2>
-                        <p>Избранные проекты, выполненные во время магистратуры по инженерии искусственного интеллекта и кибербезопасности в URV, — от внедрения на производственной линии до мультиагентных систем на базе LLM. Нажмите на изображение, чтобы увидеть больше.</p>
+                        <p>Избранные проекты, которые я выполнила, — от внедрения на производственной линии до мультиагентных систем на базе LLM. Нажмите на изображение, чтобы увидеть больше.</p>
                         <div class="row">
                             <article class="col-12 work-item portfolio-item">
                                 <a href="../images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Результат модели на реальных швах: найденный контур шва (зелёный) и тепловые карты сегментации"><img src="../images/portfolio/thesis-thumb.jpg" alt="Реальные сварные швы с найденным контуром, выделенным зелёным" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
                                 <a href="../images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Входные данные: снимок камеры с производственной линии IPTE" tabindex="-1" aria-hidden="true"></a>
                                 <a href="../images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Конвейер инференса: локализация шва → вырезка → сегментация" tabindex="-1" aria-hidden="true"></a>
                                 <a href="../images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Обучение с участием эксперта: специалист исправляет предсказания, чтобы адаптировать модель к новым швам" tabindex="-1" aria-hidden="true"></a>
-                                <h3>Автоматическая проверка сварных швов на производственной линии (магистерская диссертация)</h3>
-                                <p>Двухэтапный конвейер глубокого обучения, разработанный совместно с IPTE Spain (Реус): детектор RT-DETR находит каждый сварной шов, а U-Net попиксельно сегментирует его и строит тепловую карту, понятную оператору. Модель достигает коэффициента Dice 0,92 в реальном времени, а процесс с участием эксперта (human-in-the-loop) позволяет адаптировать её к новому типу шва примерно на 50 размеченных изображениях.</p>
+                                <h3>Автоматическая проверка сварных швов на производственной линии</h3>
+                                <p>Двухэтапный конвейер глубокого обучения, разработанный для IPTE Spain (Реус): детектор RT-DETR находит каждый сварной шов, а U-Net попиксельно сегментирует его и строит тепловую карту, понятную оператору. Модель достигает коэффициента Dice 0,92 в реальном времени, а процесс с участием эксперта (human-in-the-loop) позволяет адаптировать её к новому типу шва примерно на 50 размеченных изображениях.</p>
                                 <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
                             </article>
                             <article class="col-6 col-12-xsmall work-item portfolio-item">
@@ -265,6 +265,28 @@
                                 <h3>Мультиагентное написание статей на CrewAI</h3>
                                 <p>Команда из трёх LLM-агентов (исследователь, автор и редактор) превращает тему в готовую к публикации статью. Исследователь составляет план, который утверждает человек, автор пишет черновик объёмом от 800 слов, а редактор проверяет ясность, точность и грамматику. Общая память работает на локальных эмбеддингах Ollama.</p>
                                 <ul class="portfolio-tags"><li>CrewAI</li><li>LLM-агенты</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/crack-1.jpg" class="image fit thumb" data-caption="Фото · трещины, размеченные вручную · предсказание модели (красный)"><img src="../images/portfolio/crack-thumb.jpg" alt="Найденные трещины выделены красным" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="../images/portfolio/crack-2.jpg" class="gallery-extra" data-caption="Фото · трещины, размеченные вручную · предсказание модели (красный)" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/crack-3.jpg" class="gallery-extra" data-caption="Фото · трещины, размеченные вручную · предсказание модели (красный)" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Обнаружение трещин на бетонных поверхностях</h3>
+                                <p>Модель глубокого обучения, которая попиксельно находит трещины на фотографиях бетона и асфальта — для автоматизированного осмотра зданий и инфраструктуры. В основе — архитектура DeepCrack (сеть VGG-16 с боковыми выходами на нескольких масштабах), обученная в PyTorch на 300 размеченных изображениях; на 237 новых тестовых снимках модель достигает F1 = 0,71, хотя ширина трещин — всего несколько пикселей.</p>
+                                <ul class="portfolio-tags"><li>PyTorch</li><li>Семантическая сегментация</li><li>VGG-16</li><li>Инспекция инфраструктуры</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/mars-terrain-ru.jpg" class="image fit thumb" data-caption="Местность миссии: 100 точек по типу рельефа, цели миссии и база"><img src="../images/portfolio/mars-terrain-ru.jpg" alt="Граф марсианской местности, раскрашенный по типу рельефа" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="../images/portfolio/mars-ru.svg" class="gallery-extra" data-caption="Архитектура системы: 6 команд специализированных агентов" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Мультиагентное планирование миссий</h3>
+                                <p>Архитектура системы на CrewAI, которая планирует исследовательскую миссию на Марсе для роверов, дронов и спутников. Работу делят шесть команд специализированных агентов: одна готовит данные миссии, четыре прокладывают маршруты для каждого типа техники, а ещё одна сводит всё в единый план с учётом ограничений по энергии, времени и рельефу. Разработано в команде из пяти человек.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>Мультиагентные системы</li><li>Планирование</li><li>Анализ графов</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/privacy-ru.svg" class="image fit thumb" data-caption="Как это работает: сервер имеет дело только с зашифрованными числами"><img src="../images/portfolio/privacy-ru.svg" alt="Схема вычислений по зашифрованным данным" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="../images/portfolio/privacy-app.jpg" class="gallery-extra" data-caption="Веб-приложение: загрузка зашифрованных данных и запуск расчёта" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Статистика по зашифрованным данным</h3>
+                                <p>Веб-приложение, в котором недоверенный сервер вычисляет статистику по конфиденциальным данным, ни разу их не расшифровывая. На Python реализован приватный гомоморфизм Доминго-Феррера (ключи из 200 цифр, вероятностное шифрование); по зашифрованному медицинскому набору данных считаются средние, ковариация и регрессия, а прочитать результаты может только владелец данных. Разработано в команде из трёх человек.</p>
+                                <ul class="portfolio-tags"><li>Python</li><li>Гомоморфное шифрование</li><li>Flask</li><li>Защита данных</li></ul>
                             </article>
                         </div>
                     </section>

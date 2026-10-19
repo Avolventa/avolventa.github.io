@@ -241,15 +241,15 @@
                 <!-- Portfolio -->
                     <section id="portfolio">
                         <h2>Portfolio</h2>
-                        <p>Selected projects from my Master&#x27;s in Artificial Intelligence and Cybersecurity Engineering at URV, from a production-line deployment to multi-agent LLM systems. Click an image to see more.</p>
+                        <p>Selected projects I have delivered, from a production-line deployment to multi-agent LLM systems. Click an image to see more.</p>
                         <div class="row">
                             <article class="col-12 work-item portfolio-item">
                                 <a href="../images/portfolio/thesis-result.jpg" class="image fit thumb" data-caption="Model output on real welds: detected weld outline (green) and segmentation heatmaps"><img src="../images/portfolio/thesis-thumb.jpg" alt="Real welds with the detected weld outline in green" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>4</span></a>
                                 <a href="../images/portfolio/thesis-weld.jpg" class="gallery-extra" data-caption="Input: production camera image from the IPTE line" tabindex="-1" aria-hidden="true"></a>
                                 <a href="../images/portfolio/thesis-inference.jpg" class="gallery-extra" data-caption="Inference pipeline: weld localisation → crop → segmentation" tabindex="-1" aria-hidden="true"></a>
                                 <a href="../images/portfolio/thesis-hitl.jpg" class="gallery-extra" data-caption="Human-in-the-loop training: an expert corrects predictions to adapt the model to new welds" tabindex="-1" aria-hidden="true"></a>
-                                <h3>Automated Weld Verification on a Production Line (Master&#x27;s Thesis)</h3>
-                                <p>A two-stage deep learning pipeline built with IPTE Spain (Reus): an RT-DETR detector finds each weld, then a U-Net segments it pixel by pixel and produces a heatmap the operator can read. It reaches a Dice score of 0.92 in real time, and a human-in-the-loop workflow adapts it to a new weld type with about 50 labelled images.</p>
+                                <h3>Automated Weld Verification on a Production Line</h3>
+                                <p>A two-stage deep learning pipeline built for IPTE Spain (Reus): an RT-DETR detector finds each weld, then a U-Net segments it pixel by pixel and produces a heatmap the operator can read. It reaches a Dice score of 0.92 in real time, and a human-in-the-loop workflow adapts it to a new weld type with about 50 labelled images.</p>
                                 <ul class="portfolio-tags"><li>RT-DETR</li><li>U-Net</li><li>PyTorch</li><li>Transfer learning</li><li>Human-in-the-loop</li></ul>
                             </article>
                             <article class="col-6 col-12-xsmall work-item portfolio-item">
@@ -265,6 +265,28 @@
                                 <h3>Multi-Agent Article Writing with CrewAI</h3>
                                 <p>A team of three LLM agents (researcher, writer and editor) turns a topic into a publication-ready article. The researcher drafts an outline that a human approves, the writer produces a draft of 800+ words and the editor checks clarity, accuracy and grammar. Shared memory runs on local Ollama embeddings.</p>
                                 <ul class="portfolio-tags"><li>CrewAI</li><li>LLM agents</li><li>Ollama</li><li>Human-in-the-loop</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/crack-1.jpg" class="image fit thumb" data-caption="Photo · hand-labelled cracks · model prediction (red)"><img src="../images/portfolio/crack-thumb.jpg" alt="Cracks detected in red on concrete surfaces" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>3</span></a>
+                                <a href="../images/portfolio/crack-2.jpg" class="gallery-extra" data-caption="Photo · hand-labelled cracks · model prediction (red)" tabindex="-1" aria-hidden="true"></a>
+                                <a href="../images/portfolio/crack-3.jpg" class="gallery-extra" data-caption="Photo · hand-labelled cracks · model prediction (red)" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Crack Detection on Concrete Surfaces</h3>
+                                <p>A deep learning model that finds cracks pixel by pixel in photos of concrete and asphalt, for automated inspection of buildings and infrastructure. It is based on the DeepCrack architecture (a VGG-16 network with multi-scale side outputs), trained in PyTorch on 300 annotated images; on 237 unseen test images it reaches an F1 score of 0.71, even though cracks are only a few pixels wide.</p>
+                                <ul class="portfolio-tags"><li>PyTorch</li><li>Semantic segmentation</li><li>VGG-16</li><li>Infrastructure inspection</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/mars-terrain-en.jpg" class="image fit thumb" data-caption="Mission terrain: 100 locations by terrain type, with the mission targets and the base"><img src="../images/portfolio/mars-terrain-en.jpg" alt="Mars terrain graph coloured by terrain type" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="../images/portfolio/mars-en.svg" class="gallery-extra" data-caption="System architecture: 6 crews of specialised agents" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Multi-Agent Mission Planning</h3>
+                                <p>Architecture for a CrewAI system that plans a Mars exploration mission for rovers, drones and satellites. Six crews of specialised agents share the work: one prepares the mission data, four plan the routes for each vehicle type, and one merges everything into a single plan that respects energy, time and terrain constraints. Designed in a team of five.</p>
+                                <ul class="portfolio-tags"><li>CrewAI</li><li>Multi-agent systems</li><li>Planning</li><li>Graph analysis</li></ul>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item portfolio-item">
+                                <a href="../images/portfolio/privacy-en.svg" class="image fit thumb" data-caption="How it works: the server only ever handles encrypted numbers"><img src="../images/portfolio/privacy-en.svg" alt="Diagram of calculations on encrypted data" loading="lazy" /><span class="gallery-badge"><span class="icon solid fa-images"></span>2</span></a>
+                                <a href="../images/portfolio/privacy-app.jpg" class="gallery-extra" data-caption="The web app: upload the encrypted data and run the calculation" tabindex="-1" aria-hidden="true"></a>
+                                <h3>Statistics on Encrypted Data</h3>
+                                <p>A web app that lets an untrusted server calculate statistics on sensitive data without ever decrypting it. It implements the Domingo-Ferrer privacy homomorphism in Python (200-digit keys, probabilistic encryption) and computes means, covariance and a regression on an encrypted medical dataset; only the data owner can read the results. Developed in a team of three.</p>
+                                <ul class="portfolio-tags"><li>Python</li><li>Homomorphic encryption</li><li>Flask</li><li>Data privacy</li></ul>
                             </article>
                         </div>
                     </section>
